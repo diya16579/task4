@@ -1,0 +1,42 @@
+.custom-navbar {
+    background-color: #0d1b2a;
+    /* Dark blue background */
+    padding: 1rem;
+}
+
+.custom-navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-navbar .btn-outline-success {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.custom-navbar .btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #0d1b2a;
+}

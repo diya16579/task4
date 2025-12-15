@@ -1,0 +1,23 @@
+<!--<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="card" style="width: 18rem;" *ngFor="let item of repeat; let i=index">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.R-Yy6mvB9xaae1EABtr4-QHaES?pid=Api&P=0&h=180" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>-->
+<div class="row row-cols-1  row-cols-md-5 g-4">
+  @for(item of products;track item.id)
+  {
+  <div class="col">
+    <div class="card">
+      <img src="{{item.thumbnail}}" alt="Product Image" class="product-img" />
+      <h2>{{item.title}}</h2>
+      <p>{{item.price}}</p>
+      <a [routerLink]="['/singlelistview', item.id]">BUY NOW</a>
+    </div>
+  </div>
+  }
+</div>
